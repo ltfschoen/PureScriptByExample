@@ -6,21 +6,26 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    srcFiles: ["src/**/*.purs"],
+    libFiles: [
+      "src/**/*.purs"
+    ],
 
-    psc: {
-      options: {
-        // Task-specific options go here
-        main: "PureScriptbyExample.Chapter2.Hello",
-        modules: ["PureScriptbyExample.Chapter2.Hello"]
-      },
-      // Target
-      all: {
-        // Target-specific file lists and/or options go here
-        src: ["<%=srcFiles%>"],
-        dest: "dist/Main.js"
+    pscMake: {
+      lib: {
+        src: ["<%=libFiles%>"],
+        dest: "build" // Custom outputs target directory
+      }
+    },
+
+    dotPsci: ["<%=libFiles%>"],
+
+    pscDocs: {
+      readme: {
+        src: "src/**/*.purs",
+        dest: "pscREADME.md"
       }
     }
+
   });
 
   /*
@@ -32,6 +37,7 @@ module.exports = function(grunt) {
   */
   grunt.loadNpmTasks("grunt-purescript");
 
-  grunt.registerTask("default", ["psc:all"]);
+  grunt.registerTask("make", ["pscMake:lib", "dotPsci", "pscDocs"]);
+  grunt.registerTask("default", ["make"]);
 
 };
