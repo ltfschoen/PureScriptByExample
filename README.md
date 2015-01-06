@@ -1,11 +1,18 @@
-- Automation Tools
+# PureScript By Example #
+
+## About ##
+  - Application and customisation of PureScript code samples from the [PureScript By Example Functional Programming for the Web By Phil Freeman](https://leanpub.com/purescript) book, supported by custom code comments.
+
+## Automation Tools ##
+
   - Gruntfile.js (Grunt) is used to automate compiler build commands
   - node command (Node.js) is used to execute the compiled JavaScript output
   - package.json (NPM Package Manager generated with ```npm init```) defines project and NPM dependency properties and is used to install custom set of NPM packages before compiler build
   - bower.json (Bower Package Manager generated with ```bower init``` and choosing [moduleType](http://stackoverflow.com/questions/22674018/bower-init-difference-between-amd-es6-globals-and-node)) defines defines Bower dependencies used to install custom Bower packages before compiler build, whereby the user may pull dependencies by simply invoking ```bower update``` (instead of downloading each packages directly with ```bower install ___```)
 
-- Setup 
-  - *** With package.json and bower.json (recommended) *** 
+## Setup ## 
+
+  - **With package.json and bower.json (recommended)** 
     - Install NPM dependencies defined in package.json 
     ```
     npm install
@@ -25,8 +32,9 @@
     bower update
     ```
 
-- Implementation 
-  - *** With Gruntfile.js (recommended) ***
+## Implementation ##
+
+  - **With Gruntfile.js (recommended)**
     - Step 1: Generate JS from PURS including PureScript Prelude in build/
       ``` 
       grunt
