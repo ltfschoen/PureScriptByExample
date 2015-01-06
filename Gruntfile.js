@@ -17,7 +17,10 @@ module.exports = function(grunt) {
       options: {
         // Task-specific options go here
         main: "PureScriptbyExample.Chapter2.Hello",
-        modules: ["PureScriptbyExample.Chapter2.Hello"]
+        modules: [
+          "PureScriptbyExample.Chapter2.Hello", 
+          "PureScriptbyExample.Chapter2.Math"
+        ]
       },
       // Target
       all: {

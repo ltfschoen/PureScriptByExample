@@ -10,6 +10,10 @@
   - package.json (NPM Package Manager generated with ```npm init```) defines project and NPM dependency properties and is used to install custom set of NPM packages before compiler build
   - bower.json (Bower Package Manager generated with ```bower init``` and choosing [moduleType](http://stackoverflow.com/questions/22674018/bower-init-difference-between-amd-es6-globals-and-node)) defines defines Bower dependencies used to install custom Bower packages before compiler build, whereby the user may pull dependencies by simply invoking ```bower update``` (instead of downloading each packages directly with ```bower install ___```)
 
+## Custom Dependencies ##
+
+  - [purescript-math](https://github.com/purescript/purescript-math) contains type definitions for functions defined on JavaScript Math object
+
 ## Setup ## 
 
   - **With package.json and bower.json (recommended)** 
