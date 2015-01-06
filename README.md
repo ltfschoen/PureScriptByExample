@@ -5,7 +5,7 @@
   - bower.json (Bower Package Manager generated with ```bower init``` and choosing [moduleType](http://stackoverflow.com/questions/22674018/bower-init-difference-between-amd-es6-globals-and-node)) defines defines Bower dependencies used to install custom Bower packages before compiler build, whereby the user may pull dependencies by simply invoking ```bower update``` (instead of downloading each packages directly with ```bower install ___```)
 
 - Setup 
-  - With package.json and bower.json
+  - *** With package.json and bower.json (recommended) *** 
     - Install NPM dependencies defined in package.json 
     ```
     npm install
@@ -26,7 +26,7 @@
     ```
 
 - Implementation 
-  - With Gruntfile.js
+  - *** With Gruntfile.js (recommended) ***
     - Step 1: Generate JS from PURS including PureScript Prelude in build/
       ``` 
       grunt
