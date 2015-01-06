@@ -1,6 +1,8 @@
 dist
 build
+output
 node_modules
+bower_components
 .psci
 
 .DS_Store

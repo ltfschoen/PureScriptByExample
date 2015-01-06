@@ -1,0 +1,30 @@
+{
+  "name": "purescript_by_example",
+  "version": "1.0.0",
+  "description": "Refer to README.md",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-purescript": "0.6.0",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ltfschoen/PureScriptByExample.git"
+  },
+  "keywords": [
+    "purescript",
+    "grunt",
+    "nodejs",
+    "bower"
+  ],
+  "author": "Luke Schoen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ltfschoen/PureScriptByExample/issues"
+  },
+  "homepage": "https://github.com/ltfschoen/PureScriptByExample"
+}
