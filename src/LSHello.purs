@@ -1,4 +1,4 @@
-module PureScriptbyExample.Chapter2.Hello where
+module PureScriptbyExample.Chapter2.LSHello where
 
 import Debug.Trace
 

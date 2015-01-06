@@ -11,15 +11,18 @@ module.exports = function(grunt) {
       "bower_components/purescript-*/src/**/*.purs"
     ],
 
-    srcFiles: ["src/Hello.purs"],
+    srcFiles: [
+      "src/LSHello.purs", 
+      "src/LSMath.purs"
+    ],
 
     psc: {
       options: {
         // Task-specific options go here
-        main: "PureScriptbyExample.Chapter2.Hello",
+        main: "PureScriptbyExample.Chapter2.LSHello",
         modules: [
-          "PureScriptbyExample.Chapter2.Hello", 
-          "PureScriptbyExample.Chapter2.Math"
+          "PureScriptbyExample.Chapter2.LSHello", 
+          "PureScriptbyExample.Chapter2.LSMath"
         ]
       },
       // Target

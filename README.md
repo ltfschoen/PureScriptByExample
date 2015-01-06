@@ -50,7 +50,7 @@
   - Without Gruntfile.js
     - Step 1: Output PURS to JS with:
       ```
-      psc src/Hello.purs --output dist/Main.js --main=PureScriptbyExample.Chapter2.Hello --module PureScriptbyExample.Chapter2.Hello
+      psc src/Hello.purs --output dist/Main.js --main=PureScriptbyExample.Chapter2.LSHello --module PureScriptbyExample.Chapter2.LSHello
       ```
     - Step 2: Run code using Node.js with:
       ```

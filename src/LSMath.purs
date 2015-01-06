@@ -1,8 +1,8 @@
-module PureScriptbyExample.Chapter2.Math where
+module PureScriptbyExample.Chapter2.LSMath where
 
 {- Use a Function from an External Library -}
 import Math
-{- Debug.Trace includes 'print' -}
+{- Debug.Trace includes 'print' functionality -}
 import Debug.Trace
 
 {-
