@@ -5,14 +5,19 @@
   ```
 
 - Implementation 
-  - Generate JS from PURS including PureScript Prelude in build/
-    ``` 
-    grunt
-    ```
+  - With Gruntfile.js
+    - Step 1: Generate JS from PURS including PureScript Prelude in build/
+      ``` 
+      grunt
+      ```
+    - Step 2: Run code using Node.js with:
+      ```
+      node dist/Main.js
+      ```
   - Without Gruntfile.js
     - Step 1: Output PURS to JS with:
       ```
-      psc Chapter2.purs --output dist/Main.js --main=Chapter2 --module Chapter2
+      psc src/Hello.purs --output dist/Main.js --main=PureScriptbyExample.Chapter2.Hello --module PureScriptbyExample.Chapter2.Hello
       ```
     - Step 2: Run code using Node.js with:
       ```
