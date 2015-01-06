@@ -4,8 +4,8 @@
   npm install grunt grunt-purescript@0.6.0
   ```
 
-- Implementation
-  - With Gruntfile.js (preferred)
+- Implementation 
+  - Generate JS from PURS including PureScript Prelude in build/
     ``` 
     grunt
     ```
