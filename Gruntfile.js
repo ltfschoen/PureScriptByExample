@@ -28,7 +28,11 @@ module.exports = function(grunt) {
       // Target
       all: {
         // Target-specific file lists and/or options go here
-        src: ["<%=srcFiles%>"],
+        // libFiles are also required for Bower dependencies
+        src: [
+          "<%=srcFiles%>",
+          "<%=libFiles%>"
+        ],
         dest: "dist/Main.js"
       }
     },

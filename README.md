@@ -35,6 +35,10 @@
     ```
     bower update
     ```
+  - Compiling Multiple PureScript Files and Alternation
+    - Update Gruntfile.js with a .purs file Module Name set for 'grunt.initConfig > psc > main' 
+    - Run ```grunt```
+    - Open dist/Main.js and append to the bottom of the file separate calls to additional 'psc > modules' that are defined in the Gruntfile (i.e. ```PS.<insert_module_name>.main();```)
 
 ## Implementation ##
 
