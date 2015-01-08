@@ -43,7 +43,10 @@ module.exports = function(grunt) {
         dest: "build" // Custom outputs target directory
       }
     },
-
+    
+    /*
+      Generates .psci file that specifies commands to use when configuring psci in Interactive Mode
+    */
     dotPsci: ["<%=libFiles%>"],
 
     pscDocs: {

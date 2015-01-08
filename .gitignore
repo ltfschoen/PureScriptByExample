@@ -1,8 +1,9 @@
-dist
-build
-output
-node_modules
-bower_components
+dist/
+build/
+output/
+node_modules/
+bower_components/
+.psci_modules/
 .psci
 
 .DS_Store

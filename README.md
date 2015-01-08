@@ -60,3 +60,53 @@
       ```
       node dist/Main.js
       ```
+
+## Interactive Mode (psci) (Note: The '>' symbol indicates psci prompt) 
+
+  - Run Interactive Mode
+    ```
+    > psci
+    ```
+  - List the available commands (i.e. :?, :i <module>, :m <file>, :q, :r, :t <expr>)
+    ```
+    > :?
+    ```
+  - List all available Functions (in codebase), including Bower dependencies and Prelude modules (refer to output manually entered into [psciFunctionsAndBowerDependencies.md](psciFunctionsAndBowerDependencies.md))
+    > Press TAB key
+  - Unload any Modules that have been Compiled in memory with Reset command
+    ```
+    > :r
+    ```
+  - Evaluate an expression
+    - Step 1: Type an expression
+      ```
+      > 1 + 2
+      ```
+    - Step 2: Evaluate the expressing by Compiling dependent Modules (expected output shown)
+      Press CTRL+D
+      > 3
+      ```
+  - Call a specific Function within a Module
+      - Step 1: Type an expression
+        ```
+        > PureScriptbyExample.Chapter2.LSMath.diagonal 5 12
+        13
+        ```
+  - Define new Functions
+      - Step 1: Type an expression
+        ```
+        > let double x = x * 2
+        ```
+      - Step 2: Evaluate the expression
+        ```
+        > double 10
+        20
+        ```
+  - Type checking of an expression
+      - Example 1
+        ```
+        > :t true
+        Prim.Boolean
+        > :t [1, 2, 3]
+        [Prim.Number]
+  Note: In the Gruntfile.js, the grunt.initConfig > dotPsci property generates the .psci file, which specifies commands to use when configuring psci in Interactive Mode
