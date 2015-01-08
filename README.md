@@ -84,6 +84,7 @@
       ```
     - Step 2: Evaluate the expressing by Compiling dependent Modules (expected output shown)
       Press CTRL+D
+      ```
       > 3
       ```
   - Call a specific Function within a Module
@@ -109,4 +110,5 @@
         Prim.Boolean
         > :t [1, 2, 3]
         [Prim.Number]
+        ```
   Note: In the Gruntfile.js, the grunt.initConfig > dotPsci property generates the .psci file, which specifies commands to use when configuring psci in Interactive Mode
