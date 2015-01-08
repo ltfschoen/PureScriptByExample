@@ -72,7 +72,9 @@
     > :?
     ```
   - List all available Functions (in codebase), including Bower dependencies and Prelude modules (refer to output manually entered into [psciFunctionsAndBowerDependencies.md](psciFunctionsAndBowerDependencies.md))
+    ```
     > Press TAB key
+    ```
   - Unload any Modules that have been Compiled in memory with Reset command
     ```
     > :r
@@ -111,4 +113,5 @@
         > :t [1, 2, 3]
         [Prim.Number]
         ```
-  Note: In the Gruntfile.js, the grunt.initConfig > dotPsci property generates the .psci file, which specifies commands to use when configuring psci in Interactive Mode
+        
+  **Note:** In the Gruntfile.js, the grunt.initConfig > dotPsci property generates the .psci file, which specifies commands to use when configuring psci in Interactive Mode
